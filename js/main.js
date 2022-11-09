@@ -8,6 +8,7 @@ import thecarcomponents from './components/thecarcomponent.js';
 
     createApp({
         created() {
+            debugger;
             fetch('./data.json')
                 .then(res => res.json())
                 .then(data => this.heroData = data)
@@ -27,9 +28,9 @@ import thecarcomponents from './components/thecarcomponent.js';
         },
 
         components: {
-            herothumbnail: HeroThumb,
-            Lightbox: LightBox
+            herothumbnail: thecarcomponents,
+            // Lightbox: LightBox
         }
     }).mount('#app')
 
-})
+})()

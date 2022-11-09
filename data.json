@@ -1,0 +1,41 @@
+{
+    "car1": {
+        "name": "Mini 5 Door",
+        "id": "cap",
+        "lbBG": "Cap_LB_Bg.png",
+        "biopic": "car1.png",
+        "bio": "replace with live text"
+    },
+    "car2": {
+        "name": "The All Electric Mini",
+        "id": "carol",
+        "lbBG": "CapMarvel_LB_Bg.png",
+        "biopic": "car2.png",
+        "bio": "replace with live text",
+        "films": [1, 2, 3]
+    },
+    "car3": {
+        "name": "Mini 3 Door",
+        "id": "clint",
+        "lbBG": "CapMarvel_LB_Bg.png",
+        "biopic": "car3.png",
+        "bio": "replace with live text",
+        "films": [1, 2, 4]
+    },
+    "car4": {
+        "name": "The Mini Convertible",
+        "id": "hulk",
+        "lbBG": "CapMarvel_LB_Bg.png",
+        "biopic": "car4.png",
+        "bio": "replace with live text",
+        "films": [1, 2, 3, 4, 5]
+    },
+    "car5": {
+        "name": "The Mini Countrym  an All4",
+        "id": "thor",
+        "lbBG": "Thor_LB_Bg.png",
+        "biopic": "car5.png",
+        "bio": "replace with live text",
+        "films": [1, 2, 3]
+    }
+}

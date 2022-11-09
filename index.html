@@ -32,18 +32,20 @@
 <!-- end of hero section-->
 
 <main id="app">
-    <!-- light box component goes below-->
-    <!-- end here-->
-    <nav id="car-nav">
-        <ul class="cars">
-            <!-- binding will come here-->
-        </ul>
-    </nav>
-
-    <article>
+    <article class="main">
         <h3> Choose Your Favourite Car</h3>
         <p> Use Your Mouse and Click on your Favourite Car and Get Information about that car</p>
+        <!-- light box component goes below-->
+        <!-- end here-->
+        <nav id="car-nav">
+            <!-- adding component binding here -->
+            <ul class="cars">
+                <herothumbnail @loadlb="loadLightBox" v-for="hero in heroData" :hero="hero"></herothumbnail>
+            </ul>
+        </nav>
     </article>
+
+
 </main>
 
 
@@ -51,6 +53,7 @@
 <body>
 
 </body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="js/main.js" type="module"></script>
 
 </html>

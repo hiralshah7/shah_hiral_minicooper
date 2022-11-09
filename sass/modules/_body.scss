@@ -1,0 +1,41 @@
+.red-bumper {
+    text-align: center;
+    margin: 20px;
+}
+
+.cars {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.2rem;
+    justify-content: center;
+    justify-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    background-color: rgb(51, 83, 110);
+    padding: 20px;
+}
+
+.carbody {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.red-bumper img:hover {
+    opacity: 0.1;
+}
+
+h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: 'Michroma', sans-serif;
+    ;
+}
