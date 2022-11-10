@@ -1,41 +1,29 @@
 {
     "car1": {
         "name": "Mini 5 Door",
-        "id": "cap",
-        "lbBG": "Cap_LB_Bg.png",
-        "biopic": "car1.png",
-        "bio": "replace with live text"
+        "feature_name1": "Reimagined Front Grill",
+        "feature1": "The Mini 5 Door's Boldly redesigned front grille features a single unbroken hexagon, which extends low to the ground to impart a more commanding presence.",
+        "feature_name2": "Dynamic Damper Control",
+        "feature2": "The Available Dynamic Damper Control, in combination with Mini's Drive modes which allows you to customize your driving dynamics.",
+        "image1": "car1.png",
+        "image2": "mini5door.jpg"
     },
     "car2": {
         "name": "The All Electric Mini",
-        "id": "carol",
-        "lbBG": "CapMarvel_LB_Bg.png",
-        "biopic": "car2.png",
-        "bio": "replace with live text",
-        "films": [1, 2, 3]
+        "feature_name1": "Accelarate in an Instant",
+        "feature1": "The Mini Cooper SE3 Door delivers instant torque. Think of it like flipping on light switch - Instant Electricity.",
+        "feature_name2": "Easy Charging",
+        "feature2": "This Mini Cooper SE3 Comes with Level 1 charging cable for simple home charging in a standard 110w outlet, A level 2 charging cable can also be used in a 240V Outlet for 6 times faster charging.",
+        "image1": "car2.png",
+        "image2": "electricmini.jpg"
     },
     "car3": {
         "name": "Mini 3 Door",
-        "id": "clint",
-        "lbBG": "CapMarvel_LB_Bg.png",
-        "biopic": "car3.png",
-        "bio": "replace with live text",
-        "films": [1, 2, 4]
-    },
-    "car4": {
-        "name": "The Mini Convertible",
-        "id": "hulk",
-        "lbBG": "CapMarvel_LB_Bg.png",
-        "biopic": "car4.png",
-        "bio": "replace with live text",
-        "films": [1, 2, 3, 4, 5]
-    },
-    "car5": {
-        "name": "The Mini Countrym  an All4",
-        "id": "thor",
-        "lbBG": "Thor_LB_Bg.png",
-        "biopic": "car5.png",
-        "bio": "replace with live text",
-        "films": [1, 2, 3]
+        "feature_name1": "Get New Side Design",
+        "feature1": "Because the MINI details make the biggest difference. Our new side scuttles feature a unique hexagonal design and LED turn indicators to give your MINI an individual look..",
+        "feature_name2": "Colorful Character",
+        "feature2": "At MINI, we believe design should engage the senses. And that goes for the colours we create. With a wide range of tones to choose from in the MINI 3 door, you can be sleek and subtle, or bold and bright – or both! Whichever hue you decide best suits you, it’s sure to make a striking statement of your personal style.",
+        "image1": "car3.png",
+        "image2": "mini3door.jpg"
     }
 }

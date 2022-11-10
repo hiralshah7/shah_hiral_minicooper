@@ -12,23 +12,16 @@ body {
 }
 
 .herojpg {
-    margin-top: 20px;
     height: auto;
     width: auto;
 }
 
 .headline {
-    font-family: 'Michroma', sans-serif;
-    position: absolute;
-    margin-left: 19px;
-    //   bottom: 90%;
-    top: 40%;
-    font-weight: 600;
-    line-height: 50px;
-    font-size: 35px;
-    left: 3.001%;
-    color: rgb(21, 16, 16);
-    background-color: white;
-    border-radius: 10px;
-    padding: 11px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgb(76, 22, 22);
+    padding: 10px;
+    font-family: 'Goldman';
+    text-align: center;
+    background-color: bisque;
 }

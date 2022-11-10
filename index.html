@@ -8,9 +8,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+    <!-- EXTRA FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <!-- EXTRA FONT OVER-->
     <link rel="stylesheet" href="css/main.css">
     <title>Mini-Cooper</title>
     <h1 class="hidden"></h1>
@@ -22,21 +25,22 @@
 </section>
 <section id="hero">
     <div class="heroimg">
-        <p class="headline">
-            Welcome To Mini<br> Let the Fun Begin!
-        </p>
-        <img class="herojpg" src="images/hero2.jpg" alt="heroimg">
 
-    </div>
+        <p class="headline">
+            Welcome To Mini, Let the Fun Begin!
+        </p>
+        <div class="line">
+            <img class="herojpg" src="images/hero2.jpg" alt="heroimg">
+
+        </div>
 </section>
 <!-- end of hero section-->
 
 <main id="app">
     <article class="main">
-        <h3> Choose Your Favourite Car</h3>
-        <p> Use Your Mouse and Click on your Favourite Car and Get Information about that car</p>
-        <!-- light box component goes below-->
-        <!-- end here-->
+        <h3 class="headertext"> Choose Your Favourite Car</h3>
+        <p class="infoline"> Use Your Mouse and Click on your Favourite Car and Get Information about that car</p>
+
         <nav id="car-nav">
             <!-- adding component binding here -->
             <ul class="cars">
@@ -44,9 +48,19 @@
             </ul>
         </nav>
     </article>
-
-
+    <article class="lightboxSec">
+        <!-- light box component goes below-->
+        <Lightbox @closelb="this.showLightBox = false" v-if="showLightBox" :hero=" LightboxData">
+        </Lightbox>
+        <video class="video" controls muted>
+            <source src="assets/minicooper_video.mp4" type="video/mp4">
+          </video>
+    </article>
+    <!-- end here-->
 </main>
+<footer class="sticky_footer">
+    <h3> Thankyou for Choosing MINI</h3>
+</footer>
 
 
 

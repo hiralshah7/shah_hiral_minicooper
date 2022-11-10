@@ -10,8 +10,8 @@ export default {
     template: `
     <li @click="loadLightboxData">  
     <div class="red-bumper">
-        <h5>{{hero.name}}</h5> 
-        <img class= "carbody" :src='"images/" + hero.biopic' alt="hero image" width="250">
+        <img class= "carbody" :src='"images/" + hero.image1' alt="hero image" width="390">
+            <h5 class="name1">{{hero.name}}</h5> 
     </div>    
        
     </li>

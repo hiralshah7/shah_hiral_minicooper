@@ -1,5 +1,6 @@
 // importing my component
 import thecarcomponents from './components/thecarcomponent.js';
+import LightBox from './components/Thelightboxcomponent.js';
 
 (() => {
 
@@ -8,7 +9,7 @@ import thecarcomponents from './components/thecarcomponent.js';
 
     createApp({
         created() {
-            debugger;
+            // debugger;
             fetch('./data.json')
                 .then(res => res.json())
                 .then(data => this.heroData = data)
@@ -18,18 +19,22 @@ import thecarcomponents from './components/thecarcomponent.js';
         data() {
             return {
                 heroData: {},
-                lightboxData: {}
+                LightboxData: {},
+                // we can use the key we want to 
+                showLightBox: false
             }
         },
         methods: {
-            loadlightbox(item) {
-                debugger;
+            loadLightBox(item) {
+                this.LightboxData = item;
+                this.showLightBox = true;
             }
         },
 
         components: {
             herothumbnail: thecarcomponents,
-            // Lightbox: LightBox
+            Lightbox: LightBox
+                // Lightbox: LightBox
         }
     }).mount('#app')
 
