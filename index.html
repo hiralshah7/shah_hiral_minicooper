@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,60 +15,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
     <!-- EXTRA FONT OVER-->
-    <link rel="stylesheet" href="css/main.css">
     <title>Mini-Cooper</title>
-    <h1 class="hidden"></h1>
-</head>
-<section class="navMenu">
-    <div class="navBar">
-        <img class="nav" src="images/navbar.svg" alt="nav">
-    </div>
-</section>
-<section id="hero">
-    <div class="heroimg">
 
-        <p class="headline">
-            Welcome To Mini, Let the Fun Begin!
-        </p>
-        <div class="line">
-            <img class="herojpg" src="images/hero2.jpg" alt="heroimg">
+    <body>
+        <h1 class="hidden">hidden</h1>
+        <section class="navMenu">
+            <h2 class="hidden">Hidden</h2>
+            <div class="navBar">
+                <img class="nav" src="images/navbar.svg" alt="nav">
+            </div>
+        </section>
+        <section id="hero">
+            <h2 class="hidden">hidden</h2>
+            <div class="heroimg">
 
-        </div>
-</section>
-<!-- end of hero section-->
+                <p class="headline">
+                    Welcome To Mini, Let the Fun Begin!
+                </p>
+                <div class="line">
+                    <img class="herojpg" src="images/hero2.jpg" alt="heroimg">
 
-<main id="app">
-    <article class="main">
-        <h3 class="headertext"> Choose Your Favourite Car</h3>
-        <p class="infoline"> Use Your Mouse and Click on your Favourite Car and Get Information about that car</p>
+                </div>
+            </div>
+        </section>
+        <!-- end of hero section-->
 
-        <nav id="car-nav">
-            <!-- adding component binding here -->
-            <ul class="cars">
-                <herothumbnail @loadlb="loadLightBox" v-for="hero in heroData" :hero="hero"></herothumbnail>
-            </ul>
-        </nav>
-    </article>
-    <article class="lightboxSec">
-        <!-- light box component goes below-->
-        <Lightbox @closelb="this.showLightBox = false" v-if="showLightBox" :hero=" LightboxData">
-        </Lightbox>
-        <video class="video" controls muted>
+        <main id="app">
+            <article class="main">
+                <h3 class="headertext"> Choose Your Favourite Car</h3>
+                <p class="infoline"> Use Your Mouse and Click on your Favourite Car and Get Information about that car</p>
+
+                <nav id="car-nav">
+                    <!-- adding component binding here -->
+                    <ul class="cars">
+                        <herothumbnail @loadlb="loadLightBox" v-for="hero in heroData" :hero="hero"></herothumbnail>
+                    </ul>
+                </nav>
+            </article>
+            <article class="lightboxSec">
+                <h2 class="hidden">hidden</h2>
+                <!-- light box component goes below-->
+                <Lightbox @closelb="this.showLightBox = false" v-if="showLightBox" :hero=" LightboxData">
+                </Lightbox>
+                <video class="video" controls muted>
             <source src="assets/minicooper_video.mp4" type="video/mp4">
           </video>
-    </article>
-    <!-- end here-->
-</main>
-<footer class="sticky_footer">
-    <h3> Thankyou for Choosing MINI</h3>
-</footer>
-
-
-
-<body>
-
-</body>
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script src="js/main.js" type="module"></script>
+            </article>
+            <!-- end here-->
+        </main>
+        <footer class="sticky_footer">
+            <h3> Thankyou for Choosing MINI</h3>
+        </footer>
+    </body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/main.js" type="module"></script>
 
 </html>

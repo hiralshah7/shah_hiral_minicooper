@@ -19,6 +19,7 @@ import LightBox from './components/Thelightboxcomponent.js';
         data() {
             return {
                 heroData: {},
+                //debugger;
                 LightboxData: {},
                 // we can use the key we want to 
                 showLightBox: false
